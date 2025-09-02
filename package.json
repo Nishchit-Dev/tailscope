@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/Nishchit-Dev/tailscope"
   },
-  "categories": [
+  "keywords": [
     "tailwind",
     "tailwindcss",
     "css",
@@ -21,6 +21,13 @@
     "swatch",
     "preview",
     "hover"
+  ],
+  "categories": [
+    "Visualization",
+    "Themes",
+    "Other",
+    "Programming Languages",
+    "Language Packs"
   ],
   "main": "./out/extension.js",
   "activationEvents": [
