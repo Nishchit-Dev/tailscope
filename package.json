@@ -1,0 +1,57 @@
+{
+  "name": "tailscope",
+  "displayName": "tailscope",
+  "description": "Spot Tailwind color classes at a glance: inline highlight, hover swatch, copy HEX.",
+  "version": "0.0.1",
+  "publisher": "nishchitmalasana",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "color",
+    "palette",
+    "swatch",
+    "preview",
+    "hover"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact",
+    "onLanguage:vue",
+    "onLanguage:svelte",
+    "onLanguage:plaintext",
+    "onCommand:tailwindx.copyColor"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "tailwindx.copyColor",
+        "title": "Tailwind: Copy Color HEX"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "tailwindx.copyColor",
+        "key": "ctrl+alt+t",
+        "win": "ctrl+alt+t",
+        "linux": "ctrl+alt+t",
+        "mac": "cmd+alt+t"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.93.0",
+    "typescript": "^5.4.0"
+  }
+}
